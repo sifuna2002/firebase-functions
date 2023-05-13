@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorial</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.22.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.22.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.22.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.22.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.22.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.22.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.22.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.22.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.22.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.22.0/firebase-performance-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    <h1>Tutorial requests</h1>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+      //import firebase auth, firestore,functions
+      import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
+      import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+      import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-functions.js";
+        
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAnVVu6V_Uht79KWWWpNWlYDlwAVJsZ7kc",
+        authDomain: "functions-60f83.firebaseapp.com",
+        projectId: "functions-60f83",
+        storageBucket: "functions-60f83.appspot.com",
+        messagingSenderId: "732339427062",
+        appId: "1:732339427062:web:86824753c3c3d3c0387ed7"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+  </body>
+</html>
